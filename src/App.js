@@ -2,6 +2,8 @@ import React from "react"
 import Card from "./components/Card";
 import Navbar from './components/Navbar';
 import './style.css';
+import data from "./data";
+console.log(data)
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
           title="Life Lessons with Katie Zaferes"
           rating="5.0"
           reviewCount="(6)"
-          price="$136"
+          price={136}
           country="Ethiopia"
         />
       </div>
