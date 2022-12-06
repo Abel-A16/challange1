@@ -6,27 +6,20 @@ import data from "./data";
 console.log(data)
 
 function App() {
+  const cards = data.map(item =>{
+    return(
+      <Card
+          key={item.Id}
+          item = {item}
+        />
+    )
+  })
   return (
     <div >
       <Navbar/>
-      <div className="flex">
-        <Card
-          img="./zafres.jpeg"
-          title="Life Lessons with Katie Zaferes"
-          rating="5.0"
-          reviewCount="(6)"
-          price="$136"
-          country="Ethiopia"
-        />
-        <Card
-          img="./zafres.jpeg"
-          title="Life Lessons with Katie Zaferes"
-          rating="5.0"
-          reviewCount="(6)"
-          price={136}
-          country="Ethiopia"
-        />
-      </div>
+      <section className="flex">
+        {cards}
+      </section>
     </div>
   );
 }
