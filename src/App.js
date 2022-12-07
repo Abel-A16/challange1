@@ -3,6 +3,7 @@ import Card from "./components/Card";
 import Navbar from './components/Navbar';
 import './style.css';
 import data from "./data";
+import Hero from "./components/Hero";
 console.log(data)
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
   return (
     <div >
       <Navbar/>
+      <Hero/>
       <section className="flex">
         {cards}
       </section>
